@@ -1,0 +1,8 @@
+.pokemon-short {
+    margin-top: 10px;
+        
+    .pokemon-name {
+        background: #fff5;
+        padding: 10px;
+    }
+}

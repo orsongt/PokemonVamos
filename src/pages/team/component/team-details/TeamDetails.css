@@ -1,0 +1,15 @@
+.details-short {
+    border: solid 1px #fff0;
+    padding-bottom: 10px;
+
+    &:hover {
+        border: solid 1px #fff;
+        cursor: pointer;
+    }
+}
+
+.pokemon-info {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}

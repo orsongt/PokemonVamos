@@ -1,0 +1,25 @@
+.pokemons-list {
+    background: #0005;
+    height: 85vh;
+    /* a utiliser rem */
+    padding: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    .pokemon {
+        border: solid 1px #0000;
+        border-collapse: collapse;
+
+        &:hover {
+            border: solid 1px #fff;
+            cursor: pointer;
+        }
+    }
+
+    .pokemon-name {
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+/* creer un custom theme pour les values par default */

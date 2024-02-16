@@ -1,0 +1,14 @@
+.text-logo {
+    font-family: 'PokemonFont';
+    font-size: 1.1rem;
+    color: #ffce31;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    border: solid 1px #35339a;
+    background: #ddd;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    text-shadow: 2px 0 #35339a, -2px 0 #35339a, 0 2px #35339a, 0 -2px #35339a,
+             1px 1px #35339a, -1px -1px #35339a, 1px -1px #35339a, -1px 1px #35339a;
+}
