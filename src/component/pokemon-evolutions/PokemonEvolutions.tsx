@@ -11,19 +11,25 @@ export const PokemonEvolutions = (pokemonEvolutions: TPokemonEvolutionsTypeProps
       <>
         <div className="row">
           {pokemon &&
-            <div className='col-3 pokemon-evolution' onClick={() => showPokemon(pokemon.id)} title={ pokemon?.name }>
+            <div className='col-4 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 pokemon-evolution border border-opacity-25' onClick={() => showPokemon(pokemon.id)} key={pokemon.id} title={ pokemon?.name }>
               <img src={ pokemon?.sprite } alt={ pokemon?.name } title={ pokemon?.name } style={{ width: '50px' }} />
               <br />
-              <strong style={{fontSize: '10px'}}>n°{ pokemon?.pokedexId } - {pokemon?.name}</strong>
+              <strong style={{fontSize: '10px'}}>
+                n°{ pokemon?.pokedexId }<br />
+                {pokemon?.name}
+              </strong>
             </div>
           }
 
           {pokemons && pokemons.map(
             (pokemon: Pokemon) => (
-              <div className='col-3 pokemon-evolution' onClick={() => showPokemon(pokemon.id)} key={pokemon.id} title={ pokemon?.name }>
+              <div className='col-4 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3 pokemon-evolution border border-opacity-25' onClick={() => showPokemon(pokemon.id)} key={pokemon.id} title={ pokemon?.name }>
                 <img src={ pokemon.sprite } alt={ pokemon.name } title={ pokemon.name } style={{ width: '50px' }} />
                 <br />
-                <strong style={{fontSize: '10px'}}>n°{ pokemon.pokedexId } - {pokemon.name}</strong>
+                <strong style={{fontSize: '10px'}}>
+                  n°{ pokemon.pokedexId }<br />
+                  {pokemon.name}
+                </strong>
               </div>
               )
             )}

@@ -1,0 +1,1 @@
+export { Pipes } from './Pipes';

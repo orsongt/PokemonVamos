@@ -1,3 +1,8 @@
+.details-left, .details-right {
+    height: 85vh;
+    overflow-y: auto;
+}
+
 .details-short {
     border: solid 1px #fff0;
     padding-bottom: 10px;

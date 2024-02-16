@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { SyntheticEvent, useEffect, useState } from 'react';
 import { PokemonService } from '../../services';
 import { Pokemon } from '../../models';
 import { useGenerationPokemonStore, usePokemonByTypeStore } from '../../store/state';
@@ -43,7 +43,8 @@ export const usePokemonsTableHooks = (pokemonsTable: TPokemonsTableProps): TPoke
       }, [pokemonsByType]
       );
 
-    const handlePokemonClick = (id: number) => {
+    const handlePokemonClick = (id: number, event: SyntheticEvent<HTMLAnchorElement> ) => {
+      event.preventDefault();
       pokemonsTable.onSelectPokemon(id);
     };
 

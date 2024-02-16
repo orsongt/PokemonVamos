@@ -20,11 +20,12 @@ export const PokemonDetails = ({pokemonId}: TIdPokemonProps) => {
                 </h1>
                 <br />
                 <div className="row g-0">
-                    <div className="col-4">
+                    <div className="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                         <h5 className="card-title">
                             <small style={{ fontSize: '10px' }}>n°{pokemon.pokedexId} - </small>
                             <small style={{ fontSize: '10px' }}>Generation {pokemon.apiGeneration}</small>
                         </h5>
+
                         <img src={ pokemon.image } alt={ pokemon.name } title={ pokemon.name } className="img-fluid rounded-start" />
 
                         { pokemon.apiTypes.map(
@@ -36,7 +37,7 @@ export const PokemonDetails = ({pokemonId}: TIdPokemonProps) => {
                         )
                         }
                     </div>
-                    <div className="col-8">
+                    <div className="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                         <h5 className="card-title">Evolutions</h5>
                         <PokemonEvolutions
                             evolutions={pokemon.apiEvolutions}

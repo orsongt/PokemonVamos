@@ -2,6 +2,7 @@ import { usePokemonResistencesHooks } from "./PokemonResistences.hooks";
 import { TResistencesProps } from "./PokemonResistences.types";
 
 import './PokemonResistences.css';
+import { Pipes } from "../../pipes";
 
 export const PokemonResistences = (resistences: TResistencesProps) => {
     const { getTypeImagePokemon, typePokemon } = usePokemonResistencesHooks(resistences);
@@ -29,7 +30,7 @@ export const PokemonResistences = (resistences: TResistencesProps) => {
                             </small>
                             <br />
                             <small style={{ fontSize: '10px', fontWeight: 'bold' }} title="Damage Relation">
-                                DR {resistance.damage_relation}
+                                DR {Pipes.resistances(resistance.damage_relation)}
                             </small>
                         </span>
                         )

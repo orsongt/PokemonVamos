@@ -12,9 +12,9 @@ export const TeamDetails = () => {
     } = useTeamDetailsHooks();
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 col-xxl-8">
+        <div className="container-md">
+            <div className="row align-items-start">
+                <div className="col-12 col-sm-6 col-md-7 col-lg-8 col-xxl-8 details-left">
                     <h2 className="text-pokemon">Ton équipe</h2>
                     <SearchOnList list={
                         pokemonTeam.map((pokemonTeam: PokemonTeam) => (
@@ -24,10 +24,10 @@ export const TeamDetails = () => {
                             }
                         ))
                     } onChange={handleSetPokemonTeamToShow} />
-                    <TeamList pokemonTeam={pokemonTeamToShow} onRemovePokemonFromTeam={removePokemon} />
+                        <TeamList pokemonTeam={pokemonTeamToShow} onRemovePokemonFromTeam={removePokemon} />
                 </div>
 
-                <div className="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xxl-4">
+                <div className="col-12 col-sm-6 col-md-5 col-lg-4 col-xxl-4 details-right">
                     <h2 className="text-pokemon">+ Informations</h2>
                     <div className="col-12 pokemon-info" style={{backgroundImage: `url(${pokemonTeamSelected?.pokemon.image})` }}>
                             { pokemonTeamSelected && 

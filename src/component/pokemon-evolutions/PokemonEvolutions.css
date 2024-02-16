@@ -1,6 +1,7 @@
 .pokemon-evolution {
-    background: #fff5;
-    margin: 10px;
+    background: #0005;
+    text-shadow: 0.5px 0.5px 0.1px #ddd;
+
 
     &:hover {
         cursor: pointer;

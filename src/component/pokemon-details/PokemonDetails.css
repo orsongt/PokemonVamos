@@ -1,3 +1,8 @@
+#pokemon-details {
+    height: 85vh;
+    overflow: scroll;
+}
+
 .pokemon-details {
     padding: 20px;
     background-image: url("https://wallpapercave.com/wp/wp3284113.jpg");

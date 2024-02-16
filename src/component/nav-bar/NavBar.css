@@ -12,3 +12,13 @@
     text-shadow: 2px 0 #35339a, -2px 0 #35339a, 0 2px #35339a, 0 -2px #35339a,
              1px 1px #35339a, -1px -1px #35339a, 1px -1px #35339a, -1px 1px #35339a;
 }
+
+.tab-text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

@@ -15,7 +15,7 @@ export const TeamList = ({ pokemonTeam, onRemovePokemonFromTeam }: TTeamListProp
                         to={`/team/${pokemonTeam.pokemon.id}`}
                         style={{
                             background: `url(https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokemonTeam.pokemon.pokedexId}.gif) center/contain no-repeat, 
-                url(${pokemonTeam.pokemon.apiTypes[0].image}) center/contain no-repeat`}}
+                                        url(${pokemonTeam.pokemon.apiTypes[0].image}) center/contain no-repeat`}}
                         className="pokemon-list-item position-relative m-2"
                         title={pokemonTeam.pokemon.name}>
                         <span
@@ -25,7 +25,7 @@ export const TeamList = ({ pokemonTeam, onRemovePokemonFromTeam }: TTeamListProp
                             x
                         </span>
                         <span className="badge rounded-pill text-light bg-success position-absolute bottom-0">
-                            {pokemonTeam.pokemon.name}
+                            {pokemonTeam.pokemon.name}lm
                         </span>
                     </Link>
                 )

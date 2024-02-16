@@ -1,3 +1,4 @@
+import { SyntheticEvent } from "react";
 import { Pokemon } from "../../models";
 
 export type TPokemonsTableProps = {
@@ -6,5 +7,5 @@ export type TPokemonsTableProps = {
 
 export type TPokemonsTableHooks = {
     pokemons: Pokemon[];
-    handlePokemonClick: (id: number) => void;
+    handlePokemonClick: (id: number, event: SyntheticEvent<HTMLAnchorElement>) => void;
 }
